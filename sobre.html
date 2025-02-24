@@ -15,12 +15,13 @@
     }
 
     header {
-    background: linear-gradient(135deg, #007bff, #6610f2);
-    color: white;
-    align-items: center;
-    text-align: center;
-    padding: 30px 20px;
-    animation: fadeIn 0.5s ease-in-out;
+        background: linear-gradient(135deg, #007bff, #6610f2);
+        color: white;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 70px 10px;
+        animation: fadeIn 0.5s ease-in-out;
     }
 
     @keyframes fadeIn {
@@ -33,19 +34,50 @@
     }
 
     section{
-        margin: 20px
+        margin: 80px;
+    }
+
+    .logo {
+        width: 750px;
+        height: auto;
+        margin-top: 5px; /* Ajuste o valor para aproximar da forma desejada */
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+        gap: 20px;
+    }
+
+    .text-block {
+        padding: 15px;
+        background-color: black;
+        text-align: justify;
+        border-radius: 8px;
     }
 
 </style>
 
 <body>
-    <header style="font-family: 'Courier New', Courier, monospace; ">
+    <header style="font-family: 'Courier New', Courier, monospace; margin-bottom: 1px; ">
         <h1>O que é o HTML e CSS?</h1>
     </header>
+    
+    <div style="text-align: center;">
+        <img src="html5-css3-hd.jpg" alt="logos" class="logo">
+    </div>
 
-    <section>
-        <img src="html-5.png">
-        <h2>Definição</h2>
+    <section style="margin-top: 10px;">
+        <h1 style="text-indent: 80px; font-weight: bold; margin-bottom: 20px; font-size: 25px;">Definição</h1>
+        <div class= "container">
+            <div class="text-block" style="color: orange;">
+                O HTML (HyperText Markup Language) é a linguagem padrão para a criação de páginas web. Ele funciona como a estrutura base de um site, organizando o conteúdo através de elementos como títulos, parágrafos, imagens, links, tabelas e listas. Cada elemento HTML é representado por uma tag, que pode conter atributos específicos para definir suas propriedades. Além disso, o HTML permite a criação de uma hierarquia de informações, garantindo que o conteúdo seja bem estruturado e compreensível tanto para os navegadores quanto para os mecanismos de busca. Embora o HTML defina a estrutura e o significado dos elementos de uma página, ele não determina o seu estilo visual. Para isso, utilizamos o CSS.
+            </div>
+            <div class="text-block" style="color: lightblue">
+                O CSS (Cascading Style Sheets) é a linguagem responsável pela estilização das páginas web, permitindo o controle sobre cores, fontes, espaçamentos, tamanhos e posicionamento dos elementos. Ele funciona como uma camada de design que se sobrepõe ao HTML, garantindo que os sites tenham um visual atraente e responsivo. O CSS utiliza seletores para identificar elementos HTML e aplicar regras de estilo, podendo ser incorporado diretamente no documento HTML, dentro da própria tag, ou de forma externa, através de um arquivo separado. Além disso, o CSS possibilita o uso de layouts flexíveis e dinâmicos, adaptando o design para diferentes dispositivos e resoluções, o que é essencial para a criação de sites modernos e responsivos.
+            </div>
+        </div>
+        <div></div> 
     </section>
 </body>
 </html>
